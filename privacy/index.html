@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<title>隱私權政策 · TOBG Privacy Policy</title>
+<meta name="description" content="TOBG（Taiwan Outdoor Bouldering Guide）隱私權政策。離線優先、資料僅存於你的裝置、無第三方追蹤。">
+<style>
+  :root{
+    --bg:#000;--surface:#0E0E10;--surface-2:#161618;--border:#242428;
+    --accent:#FF9500;--accent-soft:rgba(255,149,0,.12);
+    --text:#F5F5F7;--text-dim:#A1A1A6;--text-faint:#6E6E73;
+    --radius:16px;--maxw:760px;
+    --font:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI","PingFang TC","Noto Sans TC",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;-webkit-text-size-adjust:100%;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.7;font-size:17px;letter-spacing:.01em;-webkit-font-smoothing:antialiased;}
+  a{color:var(--accent);text-decoration:none;}a:hover{text-decoration:underline;}
+
+  header{position:sticky;top:0;z-index:10;background:rgba(0,0,0,.72);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--border);}
+  .bar{max-width:var(--maxw);margin:0 auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:12px;}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--text);}
+  .mark{width:26px;height:26px;border-radius:7px;flex:none;background:linear-gradient(145deg,var(--accent),#E67E00);display:grid;place-items:center;color:#000;font-weight:800;font-size:13px;box-shadow:0 0 0 1px rgba(255,149,0,.35);}
+  .brand small{color:var(--text-faint);font-weight:500;font-size:12px;}
+  .right{display:flex;align-items:center;gap:16px;}
+  .nav{display:flex;gap:16px;}.nav a{color:var(--text-dim);font-size:15px;font-weight:500;}.nav a:hover{color:var(--text);text-decoration:none;}
+  .lang{display:flex;background:var(--surface-2);border:1px solid var(--border);border-radius:999px;padding:3px;}
+  .lang button{appearance:none;border:0;background:transparent;color:var(--text-dim);font:inherit;font-size:13px;font-weight:600;padding:5px 12px;border-radius:999px;cursor:pointer;transition:.15s;}
+  .lang button.on{background:var(--accent);color:#000;}
+  @media(max-width:560px){.nav{display:none;}}
+
+  main{max-width:var(--maxw);margin:0 auto;padding:40px 22px 80px;}
+  .hero h1{font-size:30px;line-height:1.25;margin:0 0 10px;letter-spacing:-.01em;}
+  .hero .sub{color:var(--text-dim);margin:0 0 6px;}
+  .meta{color:var(--text-faint);font-size:14px;margin-top:14px;}.meta b{color:var(--text-dim);font-weight:600;}
+  section{margin-top:34px;}
+  h2{font-size:20px;margin:0 0 12px;letter-spacing:-.01em;display:flex;align-items:center;gap:10px;}
+  h2::before{content:"";width:4px;height:18px;border-radius:2px;background:var(--accent);flex:none;}
+  h3{font-size:16px;margin:20px 0 6px;color:var(--text);}
+  p{margin:0 0 12px;}.dim{color:var(--text-dim);}
+  ul{margin:0 0 12px;padding-left:20px;}li{margin:6px 0;}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px 22px;margin:16px 0;}
+  .card.accent{border-color:rgba(255,149,0,.4);background:linear-gradient(180deg,var(--accent-soft),transparent);}
+  .perm{display:grid;gap:10px;margin:14px 0;}
+  .perm-row{display:grid;grid-template-columns:140px 1fr;gap:14px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 16px;align-items:start;}
+  .perm-row .k{color:var(--accent);font-weight:700;font-size:15px;}.perm-row .v{color:var(--text-dim);font-size:15px;}
+  @media(max-width:520px){.perm-row{grid-template-columns:1fr;gap:4px;}}
+  footer{max-width:var(--maxw);margin:0 auto;padding:30px 22px 60px;border-top:1px solid var(--border);color:var(--text-faint);font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+  footer nav{display:flex;gap:20px;flex-wrap:wrap;}footer a{color:var(--text-dim);}
+  .hidden{display:none;}.email{font-weight:600;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <a class="brand" href="../"><span class="mark">T</span><span>TOBG <small>Privacy</small></span></a>
+    <div class="right">
+      <div class="nav"><a href="../">首頁</a><a href="../support/">支援</a></div>
+      <div class="lang" role="group" aria-label="Language">
+        <button id="btn-zh" class="on" onclick="setLang('zh')">繁中</button>
+        <button id="btn-en" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- 繁體中文 -->
+<div id="doc-zh">
+<main>
+  <div class="hero">
+    <h1>隱私權政策</h1>
+    <p class="sub">TOBG — Taiwan Outdoor Bouldering Guide（台灣戶外抱石社群數位指南）</p>
+    <p class="meta"><b>生效日期</b>：2026 年 10 月 20 日　·　<b>版本</b>：1.0<br><b>開發者</b>：Wei-Li Lo（羅偉立）　·　<b>App Bundle ID</b>：com.weililo.tobg<br><b>聯絡</b>：<a class="email" href="mailto:weililo91@gmail.com">weililo91@gmail.com</a></p>
+  </div>
+
+  <div class="card accent"><p style="margin:0;"><b>一句話版本：</b>TOBG 是離線優先的 App。你建立的所有資料（岩場、石頭、路線、照片）都<b>只儲存在你自己的 iPhone 上</b>，不會上傳到任何伺服器，我們也沒有帳號系統、沒有任何第三方追蹤或分析工具。</p></div>
+
+  <section><h2>一、我們的隱私原則</h2><p>TOBG 目前（1.0 版）<b>沒有後端伺服器、沒有使用者帳號、不需要登入</b>。所有內容都透過 Apple 的 <b>SwiftData</b> 儲存在你裝置的本機資料庫中。因此在正常使用下，你的資料不會離開你的裝置。</p></section>
+
+  <section><h2>二、App 使用的權限與用途</h2>
+    <h3>📷 相機／照片（Camera / Photo Library）</h3>
+    <p>當你為石頭新增「正面參考照」或岩場封面照時，App 會請求存取相機或照片圖庫，讓你拍攝或選取一張照片。這張照片會在本機裁切為固定比例後，<b>以 SwiftData 儲存在你的裝置上</b>，用於繪製與顯示路線 Topo。照片<b>不會上傳</b>到任何伺服器，也不會分享給任何第三方。</p>
+    <h3>📍 位置（Location）</h3>
+    <p>位置權限<b>僅用於</b>讓你在新增岩場或分區時，於地圖上<b>手動釘選進場點 GPS 座標</b>，以及計算「附近是否已有岩場」以避免重複建立。</p>
+    <ul><li>我們<b>不會</b>在背景持續追蹤你的位置。</li><li>位置僅在你主動使用地圖釘點功能的當下讀取。</li><li>釘選的座標與其他資料一樣，只存在你的裝置本機。</li><li>你可以拒絕此權限，仍可用手動方式操作地圖。</li></ul>
+  </section>
+
+  <section><h2>三、資料的本機儲存（SwiftData）</h2><ul><li>你建立的岩場、分區、石頭、路線、照片與筆記，全部儲存在 App 的本機 SwiftData 資料庫。</li><li>這些資料<b>不會傳送到雲端或任何外部伺服器</b>。</li><li>若你刪除 App，這些本機資料也會一併被 iOS 移除。請自行留意重要資料的備份。</li><li>你可以隨時在 App 內刪除你建立的內容。</li></ul></section>
+
+  <section><h2>四、第三方服務與追蹤</h2><div class="card"><p style="margin:0;">TOBG <b>沒有</b>整合任何第三方分析、廣告、崩潰回報或追蹤 SDK。我們<b>不</b>蒐集裝置識別碼用於廣告追蹤、<b>不</b>進行行為分析、<b>不</b>與任何廣告商或資料仲介分享資料。App 不包含 App Tracking Transparency（ATT）所定義的追蹤行為。</p></div></section>
+
+  <section><h2>五、權限一覽</h2><div class="perm">
+    <div class="perm-row"><span class="k">相機 / 照片</span><span class="v">拍攝或選取石頭與岩場照片，僅存於本機，不上傳。</span></div>
+    <div class="perm-row"><span class="k">位置</span><span class="v">地圖上手動釘選進場點、鄰近岩場檢查；非背景追蹤。</span></div>
+    <div class="perm-row"><span class="k">本機儲存</span><span class="v">以 SwiftData 存放你所有內容；資料不離開裝置。</span></div>
+    <div class="perm-row"><span class="k">網路</span><span class="v">目前僅用於載入地圖圖磚；不傳送你的個人內容。</span></div>
+  </div></section>
+
+  <section><h2>六、兒童隱私</h2><p class="dim">TOBG 不針對 13 歲以下兒童設計，也不會蓄意蒐集兒童的個人資料。由於 App 不蒐集任何可識別個人的資料，不涉及兒童個資的蒐集或使用。</p></section>
+
+  <section><h2>七、未來雲端功能的預留條款</h2><div class="card"><p>TOBG 未來版本規劃推出雲端同步與社群協作功能（例如帳號登入、將岩場資料上傳共享、環境回報、內容審核等）。</p><p style="margin:0;">在這些功能實際上線<b>之前</b>，我們將：</p><ul style="margin-top:8px;margin-bottom:0;"><li>更新本隱私權政策，明確說明屆時會蒐集與處理哪些資料、儲存於何處、如何保護。</li><li>在你首次啟用任何需要上傳資料的功能時，取得你的明確同意。</li><li>你在那之前建立的本機資料，不會在未經你操作的情況下被自動上傳。</li></ul></div></section>
+
+  <section><h2>八、你的權利</h2><p>由於資料皆存於你的裝置，你對自己的資料擁有完全控制權：可隨時於 App 內編輯或刪除任何內容，或透過刪除 App 一次清除全部本機資料。若你對本政策有任何疑問，歡迎來信。</p></section>
+
+  <section><h2>九、政策變更</h2><p class="dim">我們可能因功能演進而更新本政策。重大變更將更新本頁上方的「生效日期」。建議你不定期回訪查看最新版本。</p></section>
+
+  <section><h2>十、聯絡我們</h2><p>如對本隱私權政策有任何疑問或建議，請聯絡：<br><a class="email" href="mailto:weililo91@gmail.com">weililo91@gmail.com</a></p></section>
+</main>
+</div>
+
+<!-- English -->
+<div id="doc-en" class="hidden">
+<main>
+  <div class="hero">
+    <h1>Privacy Policy</h1>
+    <p class="sub">TOBG — Taiwan Outdoor Bouldering Guide</p>
+    <p class="meta"><b>Effective date</b>: October 20, 2026　·　<b>Version</b>: 1.0<br><b>Developer</b>: Wei-Li Lo　·　<b>App Bundle ID</b>: com.weililo.tobg<br><b>Contact</b>: <a class="email" href="mailto:weililo91@gmail.com">weililo91@gmail.com</a></p>
+  </div>
+
+  <div class="card accent"><p style="margin:0;"><b>In one sentence:</b> TOBG is an offline-first app. Everything you create (crags, boulders, routes, photos) is stored <b>only on your own iPhone</b>. Nothing is uploaded to any server. There are no accounts, and no third-party tracking or analytics of any kind.</p></div>
+
+  <section><h2>1. Our Privacy Principles</h2><p>As of version 1.0, TOBG has <b>no backend server, no user accounts, and no login</b>. All content is stored in a local on-device database using Apple's <b>SwiftData</b>. Under normal use, your data never leaves your device.</p></section>
+
+  <section><h2>2. Permissions & How They Are Used</h2>
+    <h3>📷 Camera / Photo Library</h3>
+    <p>When you add a reference photo for a boulder or a cover photo for a crag, the app asks for camera or photo library access so you can take or pick a photo. The photo is cropped on-device and <b>stored locally via SwiftData</b> to draw and display route topos. Photos are <b>never uploaded</b> to any server and are not shared with any third party.</p>
+    <h3>📍 Location</h3>
+    <p>Location access is used <b>only</b> to let you <b>manually drop a GPS pin</b> for a crag or area's approach point on the map, and to check whether a nearby crag already exists (to avoid duplicates).</p>
+    <ul><li>We do <b>not</b> track your location in the background.</li><li>Location is read only at the moment you actively use the map-pin feature.</li><li>Pinned coordinates, like all other data, stay on your device.</li><li>You may deny this permission and still place pins manually on the map.</li></ul>
+  </section>
+
+  <section><h2>3. Local Storage (SwiftData)</h2><ul><li>Crags, areas, boulders, routes, photos, and notes you create are all stored in the app's local SwiftData database.</li><li>This data is <b>not transmitted to the cloud or any external server</b>.</li><li>If you delete the app, this local data is removed by iOS along with it. Please keep your own backups of anything important.</li><li>You can delete any content you created at any time within the app.</li></ul></section>
+
+  <section><h2>4. Third-Party Services & Tracking</h2><div class="card"><p style="margin:0;">TOBG does <b>not</b> integrate any third-party analytics, advertising, crash-reporting, or tracking SDKs. We do <b>not</b> collect advertising identifiers, do <b>not</b> perform behavioral analytics, and do <b>not</b> share data with advertisers or data brokers. The app performs no "tracking" as defined by Apple's App Tracking Transparency (ATT).</p></div></section>
+
+  <section><h2>5. Permissions at a Glance</h2><div class="perm">
+    <div class="perm-row"><span class="k">Camera / Photos</span><span class="v">Capture or pick boulder & crag photos; stored locally, never uploaded.</span></div>
+    <div class="perm-row"><span class="k">Location</span><span class="v">Manual approach-point pins & nearby-crag check; no background tracking.</span></div>
+    <div class="perm-row"><span class="k">Local storage</span><span class="v">All your content in SwiftData; data stays on device.</span></div>
+    <div class="perm-row"><span class="k">Network</span><span class="v">Currently only to load map tiles; your content is not transmitted.</span></div>
+  </div></section>
+
+  <section><h2>6. Children's Privacy</h2><p class="dim">TOBG is not directed at children under 13 and does not knowingly collect personal information from children. As the app collects no personally identifiable information, no collection or use of children's data is involved.</p></section>
+
+  <section><h2>7. Reserved Clause for Future Cloud Features</h2><div class="card"><p>Future versions of TOBG may introduce cloud sync and community features (e.g. account login, uploading and sharing crag data, condition reports, content moderation).</p><p style="margin:0;"><b>Before</b> any such feature goes live, we will:</p><ul style="margin-top:8px;margin-bottom:0;"><li>Update this Privacy Policy to clearly describe what data is collected and processed, where it is stored, and how it is protected.</li><li>Obtain your explicit consent the first time you enable any feature that uploads data.</li><li>Never automatically upload data you created beforehand without an action on your part.</li></ul></div></section>
+
+  <section><h2>8. Your Rights</h2><p>Because all data lives on your device, you have full control over it: you can edit or delete any content in the app at any time, or wipe all local data at once by deleting the app. If you have questions about this policy, please email us.</p></section>
+
+  <section><h2>9. Changes to This Policy</h2><p class="dim">We may update this policy as features evolve. Material changes will be reflected in the "Effective date" at the top of this page. Please check back periodically for the latest version.</p></section>
+
+  <section><h2>10. Contact Us</h2><p>For any questions or suggestions regarding this Privacy Policy, contact:<br><a class="email" href="mailto:weililo91@gmail.com">weililo91@gmail.com</a></p></section>
+</main>
+</div>
+
+<footer>
+  <span>© 2026 TOBG · Wei-Li Lo</span>
+  <nav><a href="../">首頁</a><a href="../support/">支援</a><a href="mailto:weililo91@gmail.com">聯絡我們</a></nav>
+</footer>
+
+<script>
+  function setLang(l){
+    var zh=l==='zh';
+    document.getElementById('doc-zh').classList.toggle('hidden',!zh);
+    document.getElementById('doc-en').classList.toggle('hidden',zh);
+    document.getElementById('btn-zh').classList.toggle('on',zh);
+    document.getElementById('btn-en').classList.toggle('on',!zh);
+    document.documentElement.lang=zh?'zh-Hant':'en';
+    try{history.replaceState(null,'',zh?'#zh':'#en');}catch(e){}
+  }
+  if(location.hash==='#en')setLang('en');
+</script>
+</body>
+</html>
