@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>支援中心 · TOBG Support</title>
-<meta name="description" content="TOBG（台灣戶外抱石指南）支援中心：常見問題與聯絡方式。">
+<meta name="description" content="TOBG（台灣戶外抱石指南）支援中心：帳號、上傳審核、資料與常見問題。">
 <style>
   :root{
     --bg:#000;--surface:#0E0E10;--surface-2:#161618;--border:#242428;
@@ -17,19 +17,16 @@
   html{scroll-behavior:smooth;}
   body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased;}
   a{color:var(--accent);text-decoration:none;}a:hover{opacity:.85;}
-
   header{position:sticky;top:0;z-index:10;background:rgba(0,0,0,.72);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--border);}
   .bar{max-width:var(--maxw);margin:0 auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:12px;}
   .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--text);}
   .mark{width:26px;height:26px;border-radius:7px;flex:none;background:linear-gradient(145deg,var(--accent),#E67E00);display:grid;place-items:center;color:#000;font-weight:800;font-size:13px;box-shadow:0 0 0 1px rgba(255,149,0,.35);}
   .brand small{color:var(--text-faint);font-weight:500;font-size:12px;}
   .nav{display:flex;gap:20px;}.nav a{color:var(--text-dim);font-size:15px;font-weight:500;}.nav a:hover{color:var(--text);}
-
   main{max-width:var(--maxw);margin:0 auto;padding:46px 22px 60px;}
   h1{font-size:32px;margin:0 0 10px;letter-spacing:-.01em;}
   .sub{color:var(--text-dim);margin:0 0 36px;}
   .pill{display:inline-block;margin:30px 0 6px;color:var(--accent);font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;}
-
   details{background:var(--surface);border:1px solid var(--border);border-radius:14px;margin:10px 0;overflow:hidden;}
   details[open]{border-color:rgba(255,149,0,.35);}
   summary{cursor:pointer;padding:18px 20px;font-weight:600;font-size:17px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;}
@@ -38,12 +35,10 @@
   details[open] summary::after{transform:rotate(45deg);}
   details .body{padding:0 20px 20px;color:var(--text-dim);font-size:16px;}
   details .body b{color:var(--text);font-weight:600;}
-
   .contact{background:linear-gradient(180deg,var(--accent-soft),transparent);border:1px solid rgba(255,149,0,.3);border-radius:20px;padding:30px 26px;margin-top:40px;text-align:center;}
   .contact h2{margin:0 0 8px;font-size:22px;}
   .contact p{color:var(--text-dim);margin:0 0 18px;}
   .contact a.mail{display:inline-block;background:var(--accent);color:#000;font-weight:700;padding:12px 24px;border-radius:12px;}
-
   footer{border-top:1px solid var(--border);margin-top:50px;}
   .foot{max-width:var(--maxw);margin:0 auto;padding:30px 22px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--text-faint);font-size:14px;}
   .foot nav{display:flex;gap:20px;flex-wrap:wrap;}.foot nav a{color:var(--text-dim);}
@@ -60,29 +55,29 @@
 
 <main>
   <h1>支援中心</h1>
-  <p class="sub">TOBG — 台灣戶外抱石指南。下面是常見問題，找不到答案歡迎直接來信。</p>
+  <p class="sub">TOBG — 台灣戶外抱石社群指南。下面是常見問題，找不到答案歡迎直接來信。</p>
 
   <p class="pill">常見問題</p>
 
-  <details open><summary>TOBG 需要連網才能用嗎？</summary><div class="body">不需要。TOBG 是<b>離線優先</b>設計，在龍洞、碧候等收訊不佳的岩場也能正常新增與瀏覽內容。唯一會用到網路的是載入地圖圖磚。</div></details>
+  <details open><summary>需要註冊帳號嗎？怎麼登入？</summary><div class="body">瀏覽公開的岩場內容前請先建立帳號。你可以用<b>電子郵件＋密碼</b>、<b>Sign in with Apple</b> 或 <b>Google</b> 登入。我們主要蒐集你的 email 用於帳號驗證，暱稱與頭像由你自行在 App 內設定。</div></details>
 
-  <details><summary>需要註冊或登入帳號嗎？</summary><div class="body">目前版本<b>不需要</b>任何帳號，打開即用。未來推出雲端同步與社群功能時才會加入選用的登入機制，屆時會另行說明。</div></details>
+  <details><summary>我上傳的岩場資料會怎麼處理？為什麼還沒出現？</summary><div class="body">你新增的岩場、石頭、路線與照片會<b>上傳到雲端並先經過審核</b>。審核通過後才會<b>公開給所有使用者</b>瀏覽；在那之前只有你本人與管理者看得到。審核需要一點時間，請耐心等候。</div></details>
 
-  <details><summary>我建立的資料存在哪裡？會上傳到雲端嗎？</summary><div class="body">所有資料（岩場、石頭、路線、照片）都透過 Apple 的 <b>SwiftData</b> 儲存在你 iPhone 的本機資料庫，<b>不會上傳</b>到任何伺服器。詳見<a href="../privacy/">隱私權政策</a>。</div></details>
+  <details><summary>我的資料存在哪裡？</summary><div class="body">帳號與你上傳的內容儲存在我們的雲端後端（<b>Supabase</b>，含資料庫與檔案儲存），透過 HTTPS 加密傳輸。詳見<a href="../privacy/">隱私權政策</a>。</div></details>
 
-  <details><summary>換手機、重裝 App 後資料會不見嗎？</summary><div class="body">會。由於資料只存在裝置本機，<b>刪除 App 會一併清除所有內容</b>，且目前尚無雲端備份。重要內容請自行保留備份。雲端同步正在規劃中。</div></details>
+  <details><summary>換手機或重裝 App，資料會不見嗎？</summary><div class="body">不會。你的帳號與已同步的內容存在雲端，<b>用同一個帳號重新登入即可取回</b>。</div></details>
 
-  <details><summary>為什麼 App 需要相機／照片權限？</summary><div class="body">用來讓你<b>拍攝或選取石頭與岩場的照片</b>（例如石頭正面參考照、岩場封面）。照片僅儲存在本機，不會上傳或分享給第三方。</div></details>
+  <details><summary>為什麼 App 需要相機／照片與位置權限？</summary><div class="body"><b>相機／照片</b>：用來拍攝或選取石頭與岩場照片；你選擇投稿的照片會上傳並在審核後公開。<b>位置</b>：用來在地圖上手動釘選進場點、檢查附近是否已有岩場；我們不會在背景追蹤你的位置。</div></details>
 
-  <details><summary>為什麼 App 需要位置權限？</summary><div class="body">僅用於讓你在地圖上<b>手動釘選岩場／分區的進場點 GPS</b>，以及提示附近是否已有岩場以避免重複建立。App <b>不會</b>在背景追蹤你的位置。</div></details>
+  <details><summary>怎麼新增岩場、石頭與路線？</summary><div class="body">1) 新增岩場：輸入名稱、在地圖釘進場點、填寫交通指南。<br>2) 新增石頭：選擇所屬分區、上傳正面清晰照。<br>3) 繪製路線：在石頭照片上劃線、標起點與終點、輸入難度與名稱。<br>送出後進入審核，通過即公開。</div></details>
 
-  <details><summary>怎麼新增一個岩場、石頭與路線？</summary><div class="body">1) 新增岩場：輸入名稱、在地圖釘進場點、填寫交通指南。<br>2) 新增石頭：選擇所屬分區、上傳正面清晰照。<br>3) 繪製路線：在石頭照片上劃線、標起點（S）與終點（T）、輸入難度與名稱即可。</div></details>
+  <details><summary>如何刪除我的帳號？</summary><div class="body">在 App 內的 <b>「設定 → 刪除帳號」</b>即可永久刪除帳號。刪除後，你的帳號、email 與個人檔案會自我們的系統移除。已公開的貢獻內容可能以匿名形式保留；若希望一併移除，請來信 <a href="mailto:weililo91@gmail.com">weililo91@gmail.com</a>。</div></details>
 
-  <details><summary>為什麼上傳石頭照片後會被裁切？</summary><div class="body">石頭正面照會裁切為固定比例，這是為了讓路線 Topo 的相對座標能<b>精準對應到照片上的實際位置</b>；若比例不一致，路線的起終點會標錯地方。</div></details>
+  <details><summary>看到不當內容或想檢舉某位使用者，怎麼辦？</summary><div class="body">我們對所有公開內容採事前審核。若你發現任何不當或錯誤的內容、或想檢舉某位使用者，請來信 <a href="mailto:weililo91@gmail.com">weililo91@gmail.com</a>，附上岩場／使用者名稱與說明，我們會儘速處理、必要時移除內容或停權。</div></details>
+
+  <details><summary>TOBG 有蒐集我的資料做廣告追蹤嗎？</summary><div class="body">沒有。TOBG 目前未整合任何第三方分析、廣告或追蹤 SDK，也不會為廣告目的追蹤你跨 App 的行為。我們蒐集的資料僅用於提供 App 本身的功能。詳見<a href="../privacy/">隱私權政策</a>。</div></details>
 
   <details><summary>發現路線資料有誤，或想回報問題／建議？</summary><div class="body">非常歡迎。請來信 <a href="mailto:weililo91@gmail.com">weililo91@gmail.com</a>，附上岩場／石頭名稱與描述，我們會盡快處理。</div></details>
-
-  <details><summary>未來會有雲端同步與社群分享嗎？</summary><div class="body">有規劃。未來版本預計加入雲端同步、岩場資料共享與環境回報等功能。任何需要上傳資料的功能都會在啟用前取得你的同意，並更新隱私權政策。</div></details>
 
   <div class="contact">
     <h2>還是沒找到答案？</h2>
