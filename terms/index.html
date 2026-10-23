@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23FF9500'/%3E%3Ctext x='50' y='55' font-size='66' font-weight='800' text-anchor='middle' dominant-baseline='central' font-family='-apple-system,Helvetica,Arial,sans-serif' fill='%23000'%3ET%3C/text%3E%3C/svg%3E">
+<title>服務條款 · TOBG Terms of Service</title>
+<meta name="description" content="TOBG（Taiwan Outdoor Bouldering Guide）服務條款，含使用者內容規範與攀岩風險自負聲明。">
+<style>
+  :root{
+    --bg:#000;--surface:#0E0E10;--surface-2:#161618;--border:#242428;
+    --accent:#FF9500;--accent-soft:rgba(255,149,0,.12);
+    --text:#F5F5F7;--text-dim:#A1A1A6;--text-faint:#6E6E73;
+    --radius:16px;--maxw:760px;
+    --font:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI","PingFang TC","Noto Sans TC",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;-webkit-text-size-adjust:100%;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.7;font-size:17px;letter-spacing:.01em;-webkit-font-smoothing:antialiased;}
+  a{color:var(--accent);text-decoration:none;}a:hover{text-decoration:underline;}
+  header{position:sticky;top:0;z-index:10;background:rgba(0,0,0,.72);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--border);}
+  .bar{max-width:var(--maxw);margin:0 auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:12px;}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--text);}
+  .mark{width:26px;height:26px;border-radius:7px;flex:none;background:linear-gradient(145deg,var(--accent),#E67E00);display:grid;place-items:center;color:#000;font-weight:800;font-size:13px;box-shadow:0 0 0 1px rgba(255,149,0,.35);}
+  .brand small{color:var(--text-faint);font-weight:500;font-size:12px;}
+  .right{display:flex;align-items:center;gap:16px;}
+  .nav{display:flex;gap:16px;}.nav a{color:var(--text-dim);font-size:15px;font-weight:500;}.nav a:hover{color:var(--text);text-decoration:none;}
+  .lang{display:flex;background:var(--surface-2);border:1px solid var(--border);border-radius:999px;padding:3px;}
+  .lang button{appearance:none;border:0;background:transparent;color:var(--text-dim);font:inherit;font-size:13px;font-weight:600;padding:5px 12px;border-radius:999px;cursor:pointer;transition:.15s;}
+  .lang button.on{background:var(--accent);color:#000;}
+  @media(max-width:560px){.nav{display:none;}}
+  main{max-width:var(--maxw);margin:0 auto;padding:40px 22px 80px;}
+  .hero h1{font-size:30px;line-height:1.25;margin:0 0 10px;letter-spacing:-.01em;}
+  .hero .sub{color:var(--text-dim);margin:0 0 6px;}
+  .meta{color:var(--text-faint);font-size:14px;margin-top:14px;}.meta b{color:var(--text-dim);font-weight:600;}
+  section{margin-top:34px;}
+  h2{font-size:20px;margin:0 0 12px;letter-spacing:-.01em;display:flex;align-items:center;gap:10px;}
+  h2::before{content:"";width:4px;height:18px;border-radius:2px;background:var(--accent);flex:none;}
+  p{margin:0 0 12px;}.dim{color:var(--text-dim);}
+  ul{margin:0 0 12px;padding-left:20px;}li{margin:6px 0;}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px 22px;margin:16px 0;}
+  .card.accent{border-color:rgba(255,149,0,.4);background:linear-gradient(180deg,var(--accent-soft),transparent);}
+  .card.danger{border-color:rgba(255,149,0,.6);background:linear-gradient(180deg,rgba(255,149,0,.14),transparent);}
+  .card.danger h2{margin-top:0;}
+  footer{max-width:var(--maxw);margin:0 auto;padding:30px 22px 60px;border-top:1px solid var(--border);color:var(--text-faint);font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+  footer nav{display:flex;gap:20px;flex-wrap:wrap;}footer a{color:var(--text-dim);}
+  .hidden{display:none;}.email{font-weight:600;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <a class="brand" href="../"><span class="mark">T</span><span>TOBG <small>Terms</small></span></a>
+    <div class="right">
+      <div class="nav"><a href="../">首頁</a><a href="../privacy/">隱私權</a><a href="../support/">支援</a></div>
+      <div class="lang" role="group" aria-label="Language">
+        <button id="btn-zh" class="on" onclick="setLang('zh')">繁中</button>
+        <button id="btn-en" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- 繁體中文 -->
+<div id="doc-zh">
+<main>
+  <div class="hero">
+    <h1>服務條款</h1>
+    <p class="sub">TOBG — Taiwan Outdoor Bouldering Guide（台灣戶外抱石社群數位指南）</p>
+    <p class="meta"><b>生效日期</b>：2026 年 10 月 23 日　·　<b>版本</b>：1.0<br><b>開發者</b>：Wei-Li Lo（羅偉立）　·　<b>App Bundle ID</b>：com.weililo.tobg<br><b>聯絡</b>：<a class="email" href="mailto:weililo91@gmail.com">weililo91@gmail.com</a></p>
+  </div>
+
+  <div class="card accent"><p style="margin:0;">歡迎使用 TOBG。當你註冊帳號或使用本 App，即表示你已閱讀、理解並同意本服務條款。若你不同意，請勿使用本 App。本條款應與<a href="../privacy/">隱私權政策</a>一併閱讀。</p></div>
+
+  <div class="card danger">
+    <h2>⚠️ 攀岩風險自負聲明（請務必詳閱）</h2>
+    <p><b>戶外抱石與攀岩是具有潛在危險的活動，可能導致嚴重受傷甚至死亡。</b></p>
+    <ul>
+      <li>TOBG 所提供的岩場位置、進場路線、路線難度、落地區、環境與安全資訊，多由使用者提供，<b>可能不正確、不完整或已過時</b>，僅供參考，不構成任何安全保證。</li>
+      <li>難度分級具主觀性，實際狀況可能因天候、岩質、季節而改變。</li>
+      <li>你必須<b>自行評估風險、自備並檢查裝備與保護措施（如抱石墊、確保者）、依自身能力判斷</b>，並為自己的安全負完全責任。</li>
+      <li>在法律允許的最大範圍內，<b>你同意自負一切風險</b>，且 TOBG 與開發者對任何因使用本 App 或依賴其資訊而生的傷害、損失或損害，<b>不負任何責任</b>。</li>
+    </ul>
+  </div>
+
+  <section><h2>一、使用資格與帳號</h2>
+    <ul>
+      <li>你需具備所在地法律認定的完全行為能力，方可使用本 App。</li>
+      <li>你須為帳號安全負責，妥善保管登入憑證；帳號下的所有活動由你負責。</li>
+      <li>你承諾提供真實資訊，且不冒用他人身分。</li>
+    </ul>
+  </section>
+
+  <section><h2>二、使用者內容與授權</h2>
+    <ul>
+      <li>你對自己提交的內容（岩場資料、照片、路線、文字等）<b>保有你原有的權利</b>。</li>
+      <li>你授予 TOBG 一項<b>非專屬、全球、免權利金</b>的授權，得於本 App 與相關服務中使用、儲存、重製、修改（如裁切照片）、公開展示與散布你的內容，以提供與推廣服務。</li>
+      <li>你聲明並保證你擁有提交內容的必要權利，且內容未侵害他人之智慧財產權、隱私權或其他權利。</li>
+      <li>提交的內容經我們審核通過後，將<b>公開顯示給所有使用者</b>。</li>
+    </ul>
+  </section>
+
+  <section><h2>三、內容規範與禁止行為</h2>
+    <div class="card"><p style="margin:0;"><b>我們對不當內容與濫用行為採零容忍政策。</b></p></div>
+    <p>你不得提交或從事下列內容或行為：</p>
+    <ul>
+      <li>違法、侵權、誹謗、騷擾、仇恨、暴力、色情或令人反感的內容；</li>
+      <li><b>明知不實或具誤導性、可能危及他人安全的岩場或路線資訊</b>；</li>
+      <li>侵害他人隱私（如未經同意公開他人私人地點或個資）；</li>
+      <li>散布垃圾訊息、惡意程式，或干擾服務正常運作。</li>
+    </ul>
+    <p class="dim">我們保留隨時審核、拒絕、移除任何內容，以及對違規帳號停權或終止之權利，無須事先通知。</p>
+  </section>
+
+  <section><h2>四、檢舉與處置</h2>
+    <p>若你發現任何不當內容或濫用使用者，請來信 <a class="email" href="mailto:weililo91@gmail.com">weililo91@gmail.com</a>，附上岩場／使用者名稱與說明。我們會儘速審視，並於必要時移除內容或停權。</p>
+  </section>
+
+  <section><h2>五、服務「現狀」提供與免責</h2>
+    <p class="dim">本 App 以「現狀」及「現有」基礎提供。在法律允許範圍內，我們不就服務之不中斷、無錯誤、資料正確性或適合特定目的作任何明示或默示之保證。</p>
+  </section>
+
+  <section><h2>六、責任限制</h2>
+    <p class="dim">在法律允許的最大範圍內，TOBG 與開發者對任何間接、附帶、衍生性損害，或因使用／無法使用本 App、依賴其內容所生之損害，均不負責。</p>
+  </section>
+
+  <section><h2>七、賠償</h2>
+    <p class="dim">因你違反本條款、或因你提交的內容，致 TOBG 或開發者遭受任何索賠、損失或費用，你同意予以賠償並使其免於損害。</p>
+  </section>
+
+  <section><h2>八、智慧財產權</h2>
+    <p class="dim">TOBG 之名稱、標誌、介面設計與軟體（不含使用者提交之內容）屬開發者所有，未經許可不得使用。</p>
+  </section>
+
+  <section><h2>九、終止</h2>
+    <p>你可隨時於 App 內「設定 → 刪除帳號」終止你的帳號。我們亦得於你違反本條款時暫停或終止你的使用權。帳號終止後，資料之處理依<a href="../privacy/">隱私權政策</a>辦理。</p>
+  </section>
+
+  <section><h2>十、條款變更</h2>
+    <p class="dim">我們可能不時更新本條款。重大變更將更新本頁「生效日期」。於變更後繼續使用本 App，視為你接受更新後之條款。</p>
+  </section>
+
+  <section><h2>十一、準據法與管轄</h2>
+    <p class="dim">本條款之解釋與適用，以中華民國（台灣）法律為準據法；因本條款所生之爭議，以台灣之法院為管轄法院。</p>
+  </section>
+
+  <section><h2>十二、聯絡我們</h2>
+    <p>如對本服務條款有任何疑問，請聯絡：<br><a class="email" href="mailto:weililo91@gmail.com">weililo91@gmail.com</a></p>
+  </section>
+</main>
+</div>
+
+<!-- English -->
+<div id="doc-en" class="hidden">
+<main>
+  <div class="hero">
+    <h1>Terms of Service</h1>
+    <p class="sub">TOBG — Taiwan Outdoor Bouldering Guide</p>
+    <p class="meta"><b>Effective date</b>: October 23, 2026　·　<b>Version</b>: 1.0<br><b>Developer</b>: Wei-Li Lo　·　<b>App Bundle ID</b>: com.weililo.tobg<br><b>Contact</b>: <a class="email" href="mailto:weililo91@gmail.com">weililo91@gmail.com</a></p>
+  </div>
+
+  <div class="card accent"><p style="margin:0;">Welcome to TOBG. By creating an account or using the app, you confirm that you have read, understood, and agree to these Terms. If you do not agree, do not use the app. These Terms should be read together with our <a href="../privacy/">Privacy Policy</a>.</p></div>
+
+  <div class="card danger">
+    <h2>⚠️ Assumption of Climbing Risk (Please Read Carefully)</h2>
+    <p><b>Outdoor bouldering and climbing are inherently dangerous activities that can result in serious injury or death.</b></p>
+    <ul>
+      <li>Crag locations, approach routes, grades, landing-zone and safety information in TOBG are largely user-submitted and <b>may be inaccurate, incomplete, or out of date</b>. They are provided for reference only and constitute no guarantee of safety.</li>
+      <li>Grades are subjective and actual conditions may change with weather, rock quality, and season.</li>
+      <li>You must <b>assess the risks yourself, bring and inspect your own equipment and protection (e.g. crash pads, spotters), judge according to your own ability</b>, and take full responsibility for your own safety.</li>
+      <li>To the maximum extent permitted by law, <b>you assume all risk</b>, and TOBG and the developer are <b>not liable</b> for any injury, loss, or damage arising from use of the app or reliance on its information.</li>
+    </ul>
+  </div>
+
+  <section><h2>1. Eligibility & Accounts</h2>
+    <ul>
+      <li>You must have full legal capacity under the laws of your jurisdiction to use the app.</li>
+      <li>You are responsible for keeping your credentials secure and for all activity under your account.</li>
+      <li>You agree to provide accurate information and not to impersonate others.</li>
+    </ul>
+  </section>
+
+  <section><h2>2. User Content & License</h2>
+    <ul>
+      <li>You <b>retain the rights you already hold</b> in content you submit (crag data, photos, routes, text, etc.).</li>
+      <li>You grant TOBG a <b>non-exclusive, worldwide, royalty-free</b> license to use, store, reproduce, modify (e.g. crop photos), publicly display, and distribute your content within the app and related services, to operate and promote the service.</li>
+      <li>You represent and warrant that you have the necessary rights to submit the content and that it does not infringe any third party's intellectual property, privacy, or other rights.</li>
+      <li>Once approved by us, submitted content is <b>made publicly visible to all users</b>.</li>
+    </ul>
+  </section>
+
+  <section><h2>3. Content Rules & Prohibited Conduct</h2>
+    <div class="card"><p style="margin:0;"><b>We have a zero-tolerance policy for objectionable content and abusive behavior.</b></p></div>
+    <p>You must not submit or engage in:</p>
+    <ul>
+      <li>content that is illegal, infringing, defamatory, harassing, hateful, violent, pornographic, or objectionable;</li>
+      <li><b>knowingly false or misleading crag or route information that could endanger others' safety</b>;</li>
+      <li>violations of others' privacy (e.g. publishing someone's private location or personal data without consent);</li>
+      <li>spam, malware, or interference with the normal operation of the service.</li>
+    </ul>
+    <p class="dim">We reserve the right to review, reject, or remove any content, and to suspend or terminate violating accounts, at any time and without prior notice.</p>
+  </section>
+
+  <section><h2>4. Reporting & Enforcement</h2>
+    <p>If you find objectionable content or an abusive user, email <a class="email" href="mailto:weililo91@gmail.com">weililo91@gmail.com</a> with the crag/user name and details. We will review promptly and remove content or suspend accounts as needed.</p>
+  </section>
+
+  <section><h2>5. "As Is" Service & Disclaimer</h2>
+    <p class="dim">The app is provided on an "as is" and "as available" basis. To the extent permitted by law, we make no express or implied warranties regarding uninterrupted or error-free operation, data accuracy, or fitness for a particular purpose.</p>
+  </section>
+
+  <section><h2>6. Limitation of Liability</h2>
+    <p class="dim">To the maximum extent permitted by law, TOBG and the developer are not liable for any indirect, incidental, or consequential damages, or for damages arising from use of or inability to use the app or reliance on its content.</p>
+  </section>
+
+  <section><h2>7. Indemnification</h2>
+    <p class="dim">You agree to indemnify and hold harmless TOBG and the developer from any claims, losses, or costs arising from your breach of these Terms or from content you submit.</p>
+  </section>
+
+  <section><h2>8. Intellectual Property</h2>
+    <p class="dim">The TOBG name, logo, interface design, and software (excluding user-submitted content) belong to the developer and may not be used without permission.</p>
+  </section>
+
+  <section><h2>9. Termination</h2>
+    <p>You may terminate your account at any time via <b>Settings → Delete Account</b> in the app. We may also suspend or terminate your access if you violate these Terms. After termination, data is handled per the <a href="../privacy/">Privacy Policy</a>.</p>
+  </section>
+
+  <section><h2>10. Changes to These Terms</h2>
+    <p class="dim">We may update these Terms from time to time. Material changes will be reflected in the "Effective date" above. Continued use after changes constitutes acceptance of the updated Terms.</p>
+  </section>
+
+  <section><h2>11. Governing Law & Jurisdiction</h2>
+    <p class="dim">These Terms are governed by the laws of the Republic of China (Taiwan); disputes arising from these Terms are subject to the jurisdiction of the courts of Taiwan.</p>
+  </section>
+
+  <section><h2>12. Contact Us</h2>
+    <p>For any questions about these Terms, contact:<br><a class="email" href="mailto:weililo91@gmail.com">weililo91@gmail.com</a></p>
+  </section>
+</main>
+</div>
+
+<footer>
+  <span>© 2026 TOBG · Wei-Li Lo</span>
+  <nav><a href="../">首頁</a><a href="../privacy/">隱私權政策</a><a href="../support/">支援</a><a href="mailto:weililo91@gmail.com">聯絡我們</a></nav>
+</footer>
+
+<script>
+  function setLang(l){
+    var zh=l==='zh';
+    document.getElementById('doc-zh').classList.toggle('hidden',!zh);
+    document.getElementById('doc-en').classList.toggle('hidden',zh);
+    document.getElementById('btn-zh').classList.toggle('on',zh);
+    document.getElementById('btn-en').classList.toggle('on',!zh);
+    document.documentElement.lang=zh?'zh-Hant':'en';
+    try{history.replaceState(null,'',zh?'#zh':'#en');}catch(e){}
+  }
+  if(location.hash==='#en')setLang('en');
+</script>
+</body>
+</html>
