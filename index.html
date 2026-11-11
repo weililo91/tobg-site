@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23FF9500'/%3E%3Ctext x='50' y='55' font-size='66' font-weight='800' text-anchor='middle' dominant-baseline='central' font-family='-apple-system,Helvetica,Arial,sans-serif' fill='%23000'%3ET%3C/text%3E%3C/svg%3E">
 <title>TOBG · 台灣戶外抱石指南</title>
-<meta name="description" content="TOBG（Taiwan Outdoor Bouldering Guide）— 台灣戶外抱石的離線優先數位指南。新增岩場、石頭，繪製路線 Topo，資料全存在你的裝置。">
+<meta name="description" content="TOBG（Taiwan Outdoor Bouldering Guide）— 台灣戶外抱石的社群數位指南。探索岩場、石頭與路線 Topo，登入後可新增岩場、繪製路線，經審核後與社群共享。">
 <meta property="og:title" content="TOBG · 台灣戶外抱石指南">
-<meta property="og:description" content="離線優先的台灣戶外抱石指南。新增岩場、繪製路線 Topo，無帳號、無追蹤。">
+<meta property="og:description" content="台灣戶外抱石的社群指南。探索岩場與路線 Topo，登入貢獻你的開發，與所有山友共享。">
 <meta property="og:type" content="website">
 <style>
   :root{
@@ -41,7 +41,7 @@
   .appicon{width:92px;height:92px;border-radius:22px;margin:0 auto 24px;background:linear-gradient(150deg,var(--accent),#E67E00);display:grid;place-items:center;color:#000;font-weight:800;font-size:40px;box-shadow:0 12px 40px rgba(255,149,0,.28),0 0 0 1px rgba(255,255,255,.06) inset;position:relative;}
   .hero h1{font-size:clamp(34px,6vw,56px);line-height:1.1;margin:0 0 16px;letter-spacing:-.02em;}
   .hero h1 .accent{color:var(--accent);}
-  .hero .lede{font-size:clamp(17px,2.4vw,21px);color:var(--text-dim);max-width:560px;margin:0 auto 32px;}
+  .hero .lede{font-size:clamp(17px,2.4vw,21px);color:var(--text-dim);max-width:580px;margin:0 auto 32px;}
   .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
   .btn-store{display:inline-flex;align-items:center;gap:10px;background:#fff;color:#000;font-weight:700;padding:14px 24px;border-radius:14px;font-size:16px;}
   .btn-store small{display:block;font-size:11px;font-weight:500;opacity:.6;line-height:1;margin-bottom:2px;}
@@ -74,7 +74,10 @@
   .download h2{font-size:clamp(26px,4vw,36px);margin:0 0 12px;letter-spacing:-.01em;}
   .download p{color:var(--text-dim);margin:0 auto 28px;max-width:440px;}
   .qr-row{display:flex;gap:30px;justify-content:center;align-items:center;flex-wrap:wrap;}
-  .qr{width:168px;height:168px;border-radius:18px;background:var(--surface);border:2px dashed var(--border);display:grid;place-items:center;text-align:center;color:var(--text-faint);font-size:13px;padding:16px;line-height:1.5;}
+  .qr-card{width:172px;flex:none;display:flex;flex-direction:column;align-items:center;gap:10px;}
+  .qr{width:172px;height:172px;border-radius:18px;background:#fff;padding:12px;box-shadow:0 10px 30px rgba(0,0,0,.4);}
+  .qr svg{display:block;width:100%;height:100%;}
+  .qr-cap{color:var(--text-faint);font-size:13px;}
 
   footer{border-top:1px solid var(--border);margin-top:40px;}
   .foot{max-width:var(--maxw);margin:0 auto;padding:40px 24px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:var(--text-faint);font-size:14px;}
@@ -92,7 +95,7 @@
       <a href="#features">功能</a>
       <a href="support/">支援</a>
       <a href="privacy/">隱私權</a>
-      <a class="cta-sm" href="#download">下載</a>
+      <a class="cta-sm" href="https://apps.apple.com/app/id6791601219">下載</a>
     </nav>
   </div>
 </header>
@@ -102,12 +105,12 @@
   <div class="wrap">
     <div class="appicon">🧗</div>
     <h1>把台灣的<span class="accent">抱石路線</span><br>收進口袋</h1>
-    <p class="lede">TOBG 是為台灣戶外抱石打造的離線指南。新增岩場、記錄石頭、在照片上畫出路線 Topo——不需網路、不需帳號，資料全存在你的 iPhone。</p>
+    <p class="lede">TOBG 是台灣戶外抱石的社群指南。探索各地岩場、石頭與路線 Topo；登入後還能新增岩場、繪製路線，經審核後與所有山友共享。</p>
     <div class="btns">
-      <a class="btn-store" href="#download"><span>⬇</span><span><small>Download on the</small>App Store</span></a>
+      <a class="btn-store" href="https://apps.apple.com/app/id6791601219"><span>⬇</span><span><small>Download on the</small>App Store</span></a>
       <a class="btn-ghost" href="#features">看看功能 ↓</a>
     </div>
-    <p class="badge-note">iPhone · 離線優先 · 無廣告無追蹤</p>
+    <p class="badge-note">iPhone · 免費下載 · 無廣告無追蹤</p>
   </div>
 </div>
 
@@ -125,13 +128,13 @@
   <div class="wrap">
     <p class="eyebrow">Features</p>
     <h2 class="h2">一支 App，記下整片岩場</h2>
-    <p class="sec-sub">從建立岩場到畫完一條線，整條生產線都在離線狀態下完成。</p>
+    <p class="sec-sub">從探索一片岩場，到親手畫完一條路線，再分享給整個社群。</p>
     <div class="grid">
-      <div class="feat"><div class="ico">📶</div><h3>離線優先</h3><p>龍洞、碧候沒訊號也能用。所有內容以 SwiftData 存在裝置本機，開著飛航模式照樣新增與查看。</p></div>
-      <div class="feat"><div class="ico">🪨</div><h3>新增岩場與石頭</h3><p>建立岩場、分區，上傳石頭正面照並裁切為統一比例，整理出屬於你的在地抱石資料庫。</p></div>
+      <div class="feat"><div class="ico">🔍</div><h3>探索台灣岩場</h3><p>瀏覽全台各地的岩場、石頭與路線 Topo，出發前先看好難度、進場與落地區。</p></div>
+      <div class="feat"><div class="ico">🪨</div><h3>新增岩場與石頭</h3><p>登入後建立岩場、分區，上傳石頭正面照並裁切為統一比例，整理在地抱石資料庫。</p></div>
       <div class="feat"><div class="ico">✏️</div><h3>繪製路線 Topo</h3><p>直接在石頭照片上劃線、標起點與終點、填入難度 V0–V14，產出清楚的路線圖。</p></div>
-      <div class="feat"><div class="ico">📍</div><h3>GPS 進場點</h3><p>在地圖上手動釘選進場座標，新增時自動提示附近是否已有岩場，避免重複開發。</p></div>
-      <div class="feat"><div class="ico">🔒</div><h3>隱私優先</h3><p>無需註冊、無需登入、零第三方追蹤與廣告。你的資料不離開你的裝置。</p></div>
+      <div class="feat"><div class="ico">📍</div><h3>GPS 進場點</h3><p>在地圖上釘選進場座標，新增時自動提示附近是否已有岩場，避免重複開發。</p></div>
+      <div class="feat"><div class="ico">🤝</div><h3>社群審核共享</h3><p>你的投稿經審核通過後公開給所有山友；換手機用同一帳號登入即可取回內容。</p></div>
       <div class="feat"><div class="ico">🇹🇼</div><h3>為台灣而生</h3><p>針對台灣戶外抱石的真實場景設計，收錄在地岩場的交通、危險提示與落地區注意事項。</p></div>
     </div>
   </div>
@@ -141,11 +144,14 @@
 <section id="download" style="padding-top:10px;">
   <div class="download">
     <p class="eyebrow">Download</p>
-    <h2>開始建立你的岩場指南</h2>
-    <p>下載 TOBG，立刻記錄你爬過的每一顆石頭。</p>
+    <h2>免費下載 TOBG</h2>
+    <p>掃描 QR code 或點擊按鈕，立刻到 App Store 下載，開始記錄你爬過的每一顆石頭。</p>
     <div class="qr-row">
-      <div class="qr">QR code<br>（App 上架後填入<br>App Store 產品頁網址）</div>
-      <a class="btn-store" href="#"><span>⬇</span><span><small>Download on the</small>App Store</span></a>
+      <div class="qr-card">
+        <div class="qr"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33" shape-rendering="crispEdges"><rect width="33" height="33" fill="#fff"/><path d="M2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM5 2h1v1h-1zM6 2h1v1h-1zM7 2h1v1h-1zM8 2h1v1h-1zM12 2h1v1h-1zM13 2h1v1h-1zM14 2h1v1h-1zM15 2h1v1h-1zM18 2h1v1h-1zM20 2h1v1h-1zM22 2h1v1h-1zM24 2h1v1h-1zM25 2h1v1h-1zM26 2h1v1h-1zM27 2h1v1h-1zM28 2h1v1h-1zM29 2h1v1h-1zM30 2h1v1h-1zM2 3h1v1h-1zM8 3h1v1h-1zM10 3h1v1h-1zM12 3h1v1h-1zM13 3h1v1h-1zM15 3h1v1h-1zM18 3h1v1h-1zM19 3h1v1h-1zM22 3h1v1h-1zM24 3h1v1h-1zM30 3h1v1h-1zM2 4h1v1h-1zM4 4h1v1h-1zM5 4h1v1h-1zM6 4h1v1h-1zM8 4h1v1h-1zM10 4h1v1h-1zM17 4h1v1h-1zM22 4h1v1h-1zM24 4h1v1h-1zM26 4h1v1h-1zM27 4h1v1h-1zM28 4h1v1h-1zM30 4h1v1h-1zM2 5h1v1h-1zM4 5h1v1h-1zM5 5h1v1h-1zM6 5h1v1h-1zM8 5h1v1h-1zM10 5h1v1h-1zM11 5h1v1h-1zM12 5h1v1h-1zM14 5h1v1h-1zM15 5h1v1h-1zM16 5h1v1h-1zM19 5h1v1h-1zM21 5h1v1h-1zM22 5h1v1h-1zM24 5h1v1h-1zM26 5h1v1h-1zM27 5h1v1h-1zM28 5h1v1h-1zM30 5h1v1h-1zM2 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1zM8 6h1v1h-1zM12 6h1v1h-1zM16 6h1v1h-1zM20 6h1v1h-1zM21 6h1v1h-1zM22 6h1v1h-1zM24 6h1v1h-1zM26 6h1v1h-1zM27 6h1v1h-1zM28 6h1v1h-1zM30 6h1v1h-1zM2 7h1v1h-1zM8 7h1v1h-1zM13 7h1v1h-1zM14 7h1v1h-1zM20 7h1v1h-1zM22 7h1v1h-1zM24 7h1v1h-1zM30 7h1v1h-1zM2 8h1v1h-1zM3 8h1v1h-1zM4 8h1v1h-1zM5 8h1v1h-1zM6 8h1v1h-1zM7 8h1v1h-1zM8 8h1v1h-1zM10 8h1v1h-1zM12 8h1v1h-1zM14 8h1v1h-1zM16 8h1v1h-1zM18 8h1v1h-1zM20 8h1v1h-1zM22 8h1v1h-1zM24 8h1v1h-1zM25 8h1v1h-1zM26 8h1v1h-1zM27 8h1v1h-1zM28 8h1v1h-1zM29 8h1v1h-1zM30 8h1v1h-1zM10 9h1v1h-1zM11 9h1v1h-1zM12 9h1v1h-1zM13 9h1v1h-1zM14 9h1v1h-1zM16 9h1v1h-1zM21 9h1v1h-1zM22 9h1v1h-1zM2 10h1v1h-1zM8 10h1v1h-1zM10 10h1v1h-1zM11 10h1v1h-1zM12 10h1v1h-1zM13 10h1v1h-1zM14 10h1v1h-1zM15 10h1v1h-1zM17 10h1v1h-1zM18 10h1v1h-1zM19 10h1v1h-1zM21 10h1v1h-1zM23 10h1v1h-1zM24 10h1v1h-1zM27 10h1v1h-1zM28 10h1v1h-1zM29 10h1v1h-1zM4 11h1v1h-1zM5 11h1v1h-1zM9 11h1v1h-1zM15 11h1v1h-1zM17 11h1v1h-1zM18 11h1v1h-1zM21 11h1v1h-1zM26 11h1v1h-1zM28 11h1v1h-1zM29 11h1v1h-1zM2 12h1v1h-1zM4 12h1v1h-1zM5 12h1v1h-1zM6 12h1v1h-1zM7 12h1v1h-1zM8 12h1v1h-1zM10 12h1v1h-1zM12 12h1v1h-1zM13 12h1v1h-1zM14 12h1v1h-1zM17 12h1v1h-1zM20 12h1v1h-1zM22 12h1v1h-1zM24 12h1v1h-1zM25 12h1v1h-1zM2 13h1v1h-1zM3 13h1v1h-1zM7 13h1v1h-1zM9 13h1v1h-1zM12 13h1v1h-1zM13 13h1v1h-1zM14 13h1v1h-1zM16 13h1v1h-1zM17 13h1v1h-1zM18 13h1v1h-1zM20 13h1v1h-1zM21 13h1v1h-1zM24 13h1v1h-1zM26 13h1v1h-1zM27 13h1v1h-1zM2 14h1v1h-1zM4 14h1v1h-1zM6 14h1v1h-1zM8 14h1v1h-1zM11 14h1v1h-1zM12 14h1v1h-1zM15 14h1v1h-1zM16 14h1v1h-1zM17 14h1v1h-1zM21 14h1v1h-1zM22 14h1v1h-1zM24 14h1v1h-1zM30 14h1v1h-1zM2 15h1v1h-1zM4 15h1v1h-1zM5 15h1v1h-1zM6 15h1v1h-1zM11 15h1v1h-1zM12 15h1v1h-1zM15 15h1v1h-1zM17 15h1v1h-1zM21 15h1v1h-1zM22 15h1v1h-1zM24 15h1v1h-1zM25 15h1v1h-1zM26 15h1v1h-1zM29 15h1v1h-1zM30 15h1v1h-1zM2 16h1v1h-1zM5 16h1v1h-1zM6 16h1v1h-1zM8 16h1v1h-1zM9 16h1v1h-1zM11 16h1v1h-1zM15 16h1v1h-1zM16 16h1v1h-1zM17 16h1v1h-1zM18 16h1v1h-1zM20 16h1v1h-1zM23 16h1v1h-1zM26 16h1v1h-1zM27 16h1v1h-1zM28 16h1v1h-1zM4 17h1v1h-1zM6 17h1v1h-1zM7 17h1v1h-1zM9 17h1v1h-1zM10 17h1v1h-1zM12 17h1v1h-1zM13 17h1v1h-1zM14 17h1v1h-1zM15 17h1v1h-1zM16 17h1v1h-1zM18 17h1v1h-1zM20 17h1v1h-1zM21 17h1v1h-1zM23 17h1v1h-1zM24 17h1v1h-1zM26 17h1v1h-1zM28 17h1v1h-1zM30 17h1v1h-1zM2 18h1v1h-1zM3 18h1v1h-1zM5 18h1v1h-1zM7 18h1v1h-1zM8 18h1v1h-1zM10 18h1v1h-1zM11 18h1v1h-1zM16 18h1v1h-1zM17 18h1v1h-1zM18 18h1v1h-1zM19 18h1v1h-1zM20 18h1v1h-1zM21 18h1v1h-1zM25 18h1v1h-1zM27 18h1v1h-1zM28 18h1v1h-1zM2 19h1v1h-1zM3 19h1v1h-1zM4 19h1v1h-1zM12 19h1v1h-1zM13 19h1v1h-1zM17 19h1v1h-1zM19 19h1v1h-1zM20 19h1v1h-1zM21 19h1v1h-1zM23 19h1v1h-1zM24 19h1v1h-1zM25 19h1v1h-1zM26 19h1v1h-1zM28 19h1v1h-1zM29 19h1v1h-1zM30 19h1v1h-1zM2 20h1v1h-1zM3 20h1v1h-1zM4 20h1v1h-1zM6 20h1v1h-1zM8 20h1v1h-1zM12 20h1v1h-1zM15 20h1v1h-1zM16 20h1v1h-1zM17 20h1v1h-1zM21 20h1v1h-1zM23 20h1v1h-1zM24 20h1v1h-1zM25 20h1v1h-1zM26 20h1v1h-1zM27 20h1v1h-1zM30 20h1v1h-1zM2 21h1v1h-1zM7 21h1v1h-1zM9 21h1v1h-1zM11 21h1v1h-1zM12 21h1v1h-1zM14 21h1v1h-1zM16 21h1v1h-1zM22 21h1v1h-1zM26 21h1v1h-1zM2 22h1v1h-1zM5 22h1v1h-1zM6 22h1v1h-1zM8 22h1v1h-1zM11 22h1v1h-1zM18 22h1v1h-1zM19 22h1v1h-1zM22 22h1v1h-1zM23 22h1v1h-1zM24 22h1v1h-1zM25 22h1v1h-1zM26 22h1v1h-1zM28 22h1v1h-1zM29 22h1v1h-1zM30 22h1v1h-1zM10 23h1v1h-1zM13 23h1v1h-1zM14 23h1v1h-1zM15 23h1v1h-1zM17 23h1v1h-1zM18 23h1v1h-1zM19 23h1v1h-1zM20 23h1v1h-1zM22 23h1v1h-1zM26 23h1v1h-1zM27 23h1v1h-1zM2 24h1v1h-1zM3 24h1v1h-1zM4 24h1v1h-1zM5 24h1v1h-1zM6 24h1v1h-1zM7 24h1v1h-1zM8 24h1v1h-1zM11 24h1v1h-1zM12 24h1v1h-1zM13 24h1v1h-1zM14 24h1v1h-1zM15 24h1v1h-1zM16 24h1v1h-1zM17 24h1v1h-1zM18 24h1v1h-1zM20 24h1v1h-1zM21 24h1v1h-1zM22 24h1v1h-1zM24 24h1v1h-1zM26 24h1v1h-1zM27 24h1v1h-1zM28 24h1v1h-1zM2 25h1v1h-1zM8 25h1v1h-1zM12 25h1v1h-1zM14 25h1v1h-1zM15 25h1v1h-1zM17 25h1v1h-1zM18 25h1v1h-1zM21 25h1v1h-1zM22 25h1v1h-1zM26 25h1v1h-1zM29 25h1v1h-1zM30 25h1v1h-1zM2 26h1v1h-1zM4 26h1v1h-1zM5 26h1v1h-1zM6 26h1v1h-1zM8 26h1v1h-1zM11 26h1v1h-1zM12 26h1v1h-1zM15 26h1v1h-1zM17 26h1v1h-1zM21 26h1v1h-1zM22 26h1v1h-1zM23 26h1v1h-1zM24 26h1v1h-1zM25 26h1v1h-1zM26 26h1v1h-1zM27 26h1v1h-1zM30 26h1v1h-1zM2 27h1v1h-1zM4 27h1v1h-1zM5 27h1v1h-1zM6 27h1v1h-1zM8 27h1v1h-1zM15 27h1v1h-1zM17 27h1v1h-1zM20 27h1v1h-1zM23 27h1v1h-1zM25 27h1v1h-1zM27 27h1v1h-1zM28 27h1v1h-1zM30 27h1v1h-1zM2 28h1v1h-1zM4 28h1v1h-1zM5 28h1v1h-1zM6 28h1v1h-1zM8 28h1v1h-1zM12 28h1v1h-1zM13 28h1v1h-1zM14 28h1v1h-1zM17 28h1v1h-1zM21 28h1v1h-1zM22 28h1v1h-1zM24 28h1v1h-1zM25 28h1v1h-1zM26 28h1v1h-1zM27 28h1v1h-1zM28 28h1v1h-1zM29 28h1v1h-1zM2 29h1v1h-1zM8 29h1v1h-1zM11 29h1v1h-1zM13 29h1v1h-1zM17 29h1v1h-1zM20 29h1v1h-1zM24 29h1v1h-1zM25 29h1v1h-1zM26 29h1v1h-1zM27 29h1v1h-1zM28 29h1v1h-1zM30 29h1v1h-1zM2 30h1v1h-1zM3 30h1v1h-1zM4 30h1v1h-1zM5 30h1v1h-1zM6 30h1v1h-1zM7 30h1v1h-1zM8 30h1v1h-1zM10 30h1v1h-1zM12 30h1v1h-1zM13 30h1v1h-1zM14 30h1v1h-1zM17 30h1v1h-1zM18 30h1v1h-1zM19 30h1v1h-1zM20 30h1v1h-1zM21 30h1v1h-1zM23 30h1v1h-1zM26 30h1v1h-1zM28 30h1v1h-1z" fill="#000"/></svg></div>
+        <span class="qr-cap">掃描下載</span>
+      </div>
+      <a class="btn-store" href="https://apps.apple.com/app/id6791601219"><span>⬇</span><span><small>Download on the</small>App Store</span></a>
     </div>
   </div>
 </section>
